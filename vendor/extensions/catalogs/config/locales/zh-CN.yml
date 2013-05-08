@@ -1,0 +1,37 @@
+zh-CN:
+  refinery:
+    plugins:
+      catalogs:
+        title: Catalogs
+    catalogs:
+      admin:
+        catalogs:
+          actions:
+            create_new: 建立新的 Catalog
+            reorder: 对 Catalogs 重新排序
+            reorder_done: 对 Catalogs 的重新排序结束
+          records:
+            title: Catalogs
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Catalogs yet. Click "Add New Catalog" to add your first catalog.
+            no_items_yet: 目前没有 Catalogs . 点击 "Add New Catalog" 创建一个catalog.
+          catalog:
+            view_live_html: 查看 catalog 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 catalog
+            delete: 永久删除 catalog
+      catalogs:
+        show:
+          other: 其他 Catalogs
+  activerecord:
+    attributes:
+      'refinery/catalogs/catalog':
+        title: Title
+        description: Description
+        image: Image
+        item_id: Item
+        price: Price
+        price_class: Price Class
+        quantity: Quantity
+        warranty: Warranty
+        guarantee: Guarantee

@@ -1,0 +1,35 @@
+en:
+  refinery:
+    plugins:
+      catalogs:
+        title: Catalogs
+    catalogs:
+      admin:
+        catalogs:
+          actions:
+            create_new: Add New Catalog
+            reorder: Reorder Catalogs
+            reorder_done: Done Reordering Catalogs
+          records:
+            title: Catalogs
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Catalogs yet. Click "Add New Catalog" to add your first catalog.
+          catalog:
+            view_live_html: View this catalog live <br/><em>(opens in a new window)</em>
+            edit: Edit this catalog
+            delete: Remove this catalog forever
+      catalogs:
+        show:
+          other: Other Catalogs
+  activerecord:
+    attributes:
+      'refinery/catalogs/catalog':
+        title: Title
+        description: Description
+        image: Image
+        item_id: Item
+        price: Price
+        price_class: Price Class
+        quantity: Quantity
+        warranty: Warranty
+        guarantee: Guarantee

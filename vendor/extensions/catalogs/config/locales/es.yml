@@ -1,0 +1,36 @@
+es:
+  refinery:
+    plugins:
+      catalogs:
+        title: Catalogs
+#        article: masculino/femenino
+    catalogs:
+      admin:
+        catalogs:
+          actions:
+            create_new: Crear nuevo catalog
+            reorder: Reordenar catalogs
+            reorder_done: Reordenación de catalogs completada
+          records:
+            title: Catalogs
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay catalogs todavía. Pulsa en "Crear nuevo Catalog" para crear tu primer catalog.
+          catalog:
+            view_live_html: Ver este catalog como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este catalog
+            delete: Borrar este catalog para siempre
+      catalogs:
+        show:
+          other: Otros catalogs
+  activerecord:
+    attributes:
+      'refinery/catalogs/catalog':
+        title: Title
+        description: Description
+        image: Image
+        item_id: Item
+        price: Price
+        price_class: Price Class
+        quantity: Quantity
+        warranty: Warranty
+        guarantee: Guarantee

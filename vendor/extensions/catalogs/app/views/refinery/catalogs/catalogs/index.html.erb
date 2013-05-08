@@ -1,0 +1,22 @@
+<% content_for :body do %>
+  <ul id="catalogs">
+    <% @catalogs.each do |catalog| %>
+    <div class="row-fluid">
+    	<div class="span4">
+    		<div class="row-fluid">
+		      <li class="span3">
+		      	<%= image_fu catalog.image, nil %>
+		      </li>
+		      <li class="span9">
+		        <h3><%= link_to catalog.title, refinery.catalogs_catalog_path(catalog) %></h3>
+		      </li>
+		      <li class="span9">
+		      	<p><%=raw catalog.description %>
+		      </li>
+		    </div>
+      	</div>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

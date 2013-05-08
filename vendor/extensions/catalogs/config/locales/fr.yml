@@ -1,0 +1,35 @@
+fr:
+  refinery:
+    plugins:
+      catalogs:
+        title: Catalogs
+    catalogs:
+      admin:
+        catalogs:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Catalog
+            reorder: Réordonner les Catalogs
+            reorder_done: Fin de réordonnancement des Catalogs
+          records:
+            title: Catalogs
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Catalog. Cliquer sur "Créer un(e) nouve(au/l/lle) Catalog" pour créer votre premi(er/ère) catalog.'
+          catalog:
+            view_live_html: Voir ce(t/tte) catalog <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) catalog
+            delete: Supprimer définitivement ce(t/tte) catalog
+      catalogs:
+        show:
+          other: Autres Catalogs
+  activerecord:
+    attributes:
+      'refinery/catalogs/catalog':
+        title: Title
+        description: Description
+        image: Image
+        item_id: Item
+        price: Price
+        price_class: Price Class
+        quantity: Quantity
+        warranty: Warranty
+        guarantee: Guarantee

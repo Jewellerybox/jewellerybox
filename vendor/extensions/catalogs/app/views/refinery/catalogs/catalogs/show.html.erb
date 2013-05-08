@@ -1,0 +1,84 @@
+<% if false %>
+<% content_for :body_content_title do %>
+  <%= @catalog.title %>
+<% end %> 
+<% end %>
+
+<div class="container-narrow">
+  <% content_for :body do %>
+  <div class="container-fluid">
+  <div class="row-fluid">
+    <section class="catalog_title span12">
+      <h2 class="featurette-heading">
+        <%=raw @catalog.title %>
+      </h2>
+    </section>
+    <section class="catalog_image span4">
+      <p>
+        <%= image_fu @catalog.image, nil %>
+      </p>
+    </section>
+    <section class="catalog_description offset2 span5">
+      <p>
+        <%=raw @catalog.description %>
+      </p>
+    </section>
+    <section class="catalog_item_id offset2 span5">
+      <p>
+        Item id: <%=raw @catalog.item_id %>
+      </p>
+    </section>
+    
+    <!-- <section class="catalog_price">
+      <p>
+        Price in leva: <%=raw @catalog.price %>
+      </p>
+    </section> -->
+    <section class="catalog_price_class span7">
+      <p>
+        Price class: <%=raw @catalog.price_class %>
+      </p>
+    </section>
+
+    <section class="catalog_warranty span7">
+      <p>
+        <%=raw @catalog.warranty %>
+      </p>
+    </section>
+    <section class="catalog_guarantee span7">
+      <p>
+        <%=raw @catalog.guarantee %>
+      </p>
+    </section>
+    <section class="catalog_quantity span12">
+      <p>
+        Limited quantity: <%=raw @catalog.quantity %>
+      </p>
+    </section>
+    <section class="span12">
+      <a href="*" class="btn btn-info">Request Price</a>
+      <a href="*" class="btn btn-success">Order as Gift</a>
+    </section>
+  </div>
+  </div>
+  <% end %>
+
+
+
+  <% if false %>
+  <% content_for :side_body do %>
+    <aside>
+      <h2><%= t('.other') %></h2>
+      <ul id="catalogs">
+        <% @catalogs.each do |catalog| %>
+          <li>
+            <%= link_to catalog.title, refinery.catalogs_catalog_path(catalog) %>
+          </li>
+        <% end %>
+      </ul>
+    </aside>
+  <% end %>
+  <% end %>
+
+  <%= render '/refinery/content_page' %>
+</div>

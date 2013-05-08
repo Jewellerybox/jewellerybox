@@ -1,0 +1,35 @@
+nl:
+  refinery:
+    plugins:
+      catalogs:
+        title: Catalogs
+    catalogs:
+      admin:
+        catalogs:
+          actions:
+            create_new: Maak een nieuwe Catalog
+            reorder: Wijzig de volgorde van de Catalogs
+            reorder_done: Klaar met het wijzingen van de volgorde van de Catalogs
+          records:
+            title: Catalogs
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Catalogs. Druk op 'Maak een nieuwe Catalog' om de eerste aan te maken.
+          catalog:
+            view_live_html: Bekijk deze catalog op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze catalog
+            delete: Verwijder deze catalog voor eeuwig
+      catalogs:
+        show:
+          other: Andere Catalogs
+  activerecord:
+    attributes:
+      'refinery/catalogs/catalog':
+        title: Title
+        description: Description
+        image: Image
+        item_id: Item
+        price: Price
+        price_class: Price Class
+        quantity: Quantity
+        warranty: Warranty
+        guarantee: Guarantee

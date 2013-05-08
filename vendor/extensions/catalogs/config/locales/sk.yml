@@ -1,0 +1,35 @@
+sk:
+  refinery:
+    plugins:
+      catalogs:
+        title: Catalogs
+    catalogs:
+      admin:
+        catalogs:
+          actions:
+            create_new: Pridať Catalog
+            reorder: Preusporiadať Catalogs
+            reorder_done: Koniec radenia Catalogs
+          records:
+            title: Catalogs
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Catalogs. Kliknite na "Pridať Catalog" pre pridanie prvého catalog.
+          catalog:
+            view_live_html: Zobraziť náhľad catalog<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť catalog
+            delete: Zmazať catalog
+      catalogs:
+        show:
+          other: Daľšie Catalogs
+  activerecord:
+    attributes:
+      'refinery/catalogs/catalog':
+        title: Title
+        description: Description
+        image: Image
+        item_id: Item
+        price: Price
+        price_class: Price Class
+        quantity: Quantity
+        warranty: Warranty
+        guarantee: Guarantee

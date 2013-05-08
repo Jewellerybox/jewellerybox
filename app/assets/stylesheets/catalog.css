@@ -1,0 +1,50 @@
+.catalog_title {
+	font-family: BrushScriptMT;
+	word-spacing: 2;
+}
+
+.catalog_image {
+
+}
+
+.catalog_description {
+
+}
+
+.catalog_description ul {
+	margin: 0 0 0 0;	
+	border-left: 1px solid #f5f5f5;
+}
+
+.catalog_description ul li {
+	padding-left: 10px;
+	line-height: 1.5em;
+	list-style: none;
+}
+
+
+.catalog_item_id {
+	padding: 20px 0;
+	color: #a8a8a8;
+}
+
+.catalog_price {
+
+}
+
+.catalog_price_class {
+
+}
+
+.catalog_quantity {
+
+}
+
+.catalog_warranty {
+	color: #a8a8a8;
+}
+
+.catalog_guarantee {
+	color: #a8a8a8;
+}
+

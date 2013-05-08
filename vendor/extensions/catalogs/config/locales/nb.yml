@@ -1,0 +1,35 @@
+nb:
+  refinery:
+    plugins:
+      catalogs:
+        title: Catalogs
+    catalogs:
+      admin:
+        catalogs:
+          actions:
+            create_new: Lag en ny Catalog
+            reorder: Endre rekkefølgen på Catalogs
+            reorder_done: Ferdig å endre rekkefølgen Catalogs
+          records:
+            title: Catalogs
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Catalogs enda. Klikk på "Lag en ny Catalog" for å legge til din første catalog.
+          catalog:
+            view_live_html: Vis hvordan denne catalog ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne catalog
+            delete: Fjern denne catalog permanent
+      catalogs:
+        show:
+          other: Andre Catalogs
+  activerecord:
+    attributes:
+      'refinery/catalogs/catalog':
+        title: Title
+        description: Description
+        image: Image
+        item_id: Item
+        price: Price
+        price_class: Price Class
+        quantity: Quantity
+        warranty: Warranty
+        guarantee: Guarantee
